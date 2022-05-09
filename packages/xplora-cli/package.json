@@ -21,7 +21,7 @@
     "access": "public"
   },
   "scripts": {
-    "develop": "NODE_ENV=development nodemon bin/xplora.js .",
+    "develop": "cross-env NODE_ENV=development nodemon bin/xplora.js .",
     "start": "node bin/xplora.js",
     "test": "ava __tests__/test.js"
   },
@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "ava": "^3.15.0",
+    "cross-env": "^7.0.3",
     "deep-equal": "^2.0.5",
     "nodemon": "^2.0.13"
   }
